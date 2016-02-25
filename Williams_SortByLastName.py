@@ -7,7 +7,7 @@ def main():
     lstMasterNames = []
     
     for strLine in flNames:
-		strLine = strLine.rstrip()
+		strLine = strLine.lstrip().rstrip()
 		strLastFirst = strLine.split(' ')[1] + ',' + strLine.split(' ')[0]
 		lstMasterNames.append(strLastFirst)
 		
