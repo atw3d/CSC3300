@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import sys
+
 def main():
     flNames = open("name.txt", "r")
     lstMasterNames = []
@@ -17,3 +19,8 @@ def main():
 #end Main()
 
 main()
+
+print
+while True:
+	if raw_input("exit: "):
+		sys.exit()
